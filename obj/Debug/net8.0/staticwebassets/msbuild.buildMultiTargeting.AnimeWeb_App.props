@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AnimeWeb_App.props" />
+</Project>

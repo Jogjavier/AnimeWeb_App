@@ -1,0 +1,33 @@
+﻿@model List<AnimeWeb_App.Models.Anime>
+
+@{
+    ViewData["Title"] = "Top Anime";
+}
+
+<h2 class="mb-4 text-center">Top Anime</h2>
+
+<div class="row">
+    @foreach (var anime in Model)
+    {
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="@anime.Images?.Jpg?.Image_Url" class="card-img-top" alt="@anime.Title">
+
+                <div class="card-body">
+                    <h5 class="card-title">@anime.Title</h5>
+
+                    <p class="card-text">
+                        <strong>Tipo:</strong> @anime.Type <br />
+                        <strong>Año:</strong> @anime.Year <br />
+                        <strong>Episodios:</strong> @anime.Episodes
+                    </p>
+
+                    <a href="@Url.Action("Show", "Anime", new { id = anime.Mal_Id })"
+                       class="btn btn-primary w-100">
+                        Ver detalles
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

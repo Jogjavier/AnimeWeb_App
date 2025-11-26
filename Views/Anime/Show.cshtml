@@ -1,0 +1,228 @@
+﻿@model AnimeWeb_App.Models.AnimeViewModel
+
+@{
+    ViewData["Title"] = Model.Anime.Title;
+}
+
+<div class="container py-4">
+    <h1 class="mb-4 text-center fw-bold">@Model.Anime.Title</h1>
+
+    <!-- Anime Info Card -->
+    <div class="card mb-5 shadow-sm border-0">
+        <div class="row g-0">
+            <div class="col-md-4 col-lg-3">
+                @if (!string.IsNullOrEmpty(Model.Anime.Images?.Jpg?.Large_Image_Url))
+                {
+                    <img src="@Model.Anime.Images.Jpg.Large_Image_Url"
+                         class="img-fluid rounded-start w-100 h-100 object-fit-cover"
+                         alt="@Model.Anime.Title"
+                         loading="lazy">
+                }
+                else
+                {
+                    <div class="bg-secondary rounded-start d-flex align-items-center justify-content-center h-100">
+                        <span class="text-white">Sin imagen</span>
+                    </div>
+                }
+            </div>
+
+            <div class="col-md-8 col-lg-9">
+                <div class="card-body p-4">
+                    <h4 class="mb-3 text-primary">Información</h4>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-2"><strong>Tipo:</strong> @(Model.Anime.Type ?? "N/A")</p>
+                            <p class="mb-2"><strong>Estado:</strong> @(Model.Anime.Status ?? "N/A")</p>
+                            <p class="mb-2"><strong>Episodios:</strong> @(Model.Anime.Episodes?.ToString() ?? "N/A")</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-2"><strong>Duración:</strong> @(Model.Anime.Duration ?? "N/A")</p>
+                            <p class="mb-2"><strong>Rating:</strong> @(Model.Anime.Rating ?? "N/A")</p>
+                            <p class="mb-2"><strong>Año:</strong> @(Model.Anime.Year?.ToString() ?? "N/A")</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <h5 class="mb-3 text-primary">Compañías</h5>
+
+                    @{
+                        var producers = Model.Anime.Producers?.Select(p => p.Name).ToList();
+                        var licensors = Model.Anime.Licensors?.Select(p => p.Name).ToList();
+                        var studios = Model.Anime.Studios?.Select(p => p.Name).ToList();
+                    }
+
+                    <div class="mb-3">
+                        <p class="mb-2">
+                            <strong>Productores:</strong>
+                            @(producers?.Any() == true ? string.Join(", ", producers) : "N/A")
+                        </p>
+                        <p class="mb-2">
+                            <strong>Licenciatarios:</strong>
+                            @(licensors?.Any() == true ? string.Join(", ", licensors) : "N/A")
+                        </p>
+                        <p class="mb-0">
+                            <strong>Estudios:</strong>
+                            @(studios?.Any() == true ? string.Join(", ", studios) : "N/A")
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Characters Section -->
+    @if (Model.Characters?.Any() == true)
+    {
+        <section class="mb-5" id="characters-section">
+            <h3 class="mb-4 fw-bold">Personajes</h3>
+
+            <div class="row g-4">
+                @foreach (var c in Model.Characters)
+                {
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="card shadow-sm h-100 border-0">
+                            @if (!string.IsNullOrEmpty(c.Character.Images?.Jpg?.Image_Url))
+                            {
+                                <img src="@c.Character.Images.Jpg.Image_Url"
+                                     class="card-img-top"
+                                     alt="@c.Character.Name"
+                                     loading="lazy"
+                                     style="height: 250px; object-fit: cover;">
+                            }
+
+                            <div class="card-body text-center p-3">
+                                <h6 class="card-title mb-2 small">@c.Character.Name</h6>
+                                <span class="badge bg-secondary small">@c.Role</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            @if (Model.CharactersTotalPages > 1)
+            {
+                <nav aria-label="Paginación de personajes" class="mt-4">
+                    <ul class="pagination justify-content-center flex-wrap">
+                        @for (int i = 1; i <= Model.CharactersTotalPages; i++)
+                        {
+                            <li class="page-item @(i == Model.CharactersPage ? "active" : "")">
+                                <a class="page-link pagination-link"
+                                   data-section="characters"
+                                   href="@Url.Action("Show", new {
+                                        id = Model.Anime.Mal_Id,
+                                        pageCharacters = i,
+                                        pageStaff = Model.StaffPage
+                                   })">
+                                    @i
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            }
+        </section>
+    }
+
+    <!-- Staff Section -->
+    @if (Model.Staff?.Any() == true)
+    {
+        <section class="mb-5" id="staff-section">
+            <h3 class="mb-4 fw-bold">Staff</h3>
+
+            <div class="row g-4">
+                @foreach (var s in Model.Staff)
+                {
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="card shadow-sm h-100 border-0">
+                            @if (!string.IsNullOrEmpty(s.Person.Images?.Jpg?.Image_Url))
+                            {
+                                <img src="@s.Person.Images.Jpg.Image_Url"
+                                     class="card-img-top"
+                                     alt="@s.Person.Name"
+                                     loading="lazy"
+                                     style="height: 250px; object-fit: cover;">
+                            }
+
+                            <div class="card-body text-center p-3">
+                                <h6 class="card-title mb-2 small">@s.Person.Name</h6>
+
+                                @if (s.Positions?.Any() == true)
+                                {
+                                    <div class="d-flex flex-wrap gap-1 justify-content-center">
+                                        @foreach (var pos in s.Positions)
+                                        {
+                                            <span class="badge bg-primary small">@pos</span>
+                                        }
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            @if (Model.StaffTotalPages > 1)
+            {
+                <nav aria-label="Paginación de staff" class="mt-4">
+                    <ul class="pagination justify-content-center flex-wrap">
+                        @for (int i = 1; i <= Model.StaffTotalPages; i++)
+                        {
+                            <li class="page-item @(i == Model.StaffPage ? "active" : "")">
+                                <a class="page-link pagination-link"
+                                   data-section="staff"
+                                   href="@Url.Action("Show", new {
+                                        id = Model.Anime.Mal_Id,
+                                        pageCharacters = Model.CharactersPage,
+                                        pageStaff = i
+                                   })">
+                                    @i
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            }
+        </section>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        // Guardar posición del scroll antes de cambiar de página
+        document.querySelectorAll('.pagination-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const section = this.getAttribute('data-section');
+                const sectionElement = document.getElementById(section + '-section');
+
+                if (sectionElement) {
+                    // Guardar la posición de la sección en sessionStorage
+                    const offsetTop = sectionElement.offsetTop - 20; // 20px de margen
+                    sessionStorage.setItem('scrollPosition', offsetTop);
+                    sessionStorage.setItem('scrollSection', section);
+                }
+            });
+        });
+
+        // Restaurar posición del scroll después de cargar la página
+        window.addEventListener('load', function() {
+            const savedPosition = sessionStorage.getItem('scrollPosition');
+            const savedSection = sessionStorage.getItem('scrollSection');
+
+            if (savedPosition && savedSection) {
+                // Usar setTimeout para asegurar que el DOM esté completamente renderizado
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: parseInt(savedPosition),
+                        behavior: 'smooth'
+                    });
+
+                    // Limpiar el storage después de usar
+                    sessionStorage.removeItem('scrollPosition');
+                    sessionStorage.removeItem('scrollSection');
+                }, 100);
+            }
+        });
+    </script>
+}
