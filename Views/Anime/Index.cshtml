@@ -5,6 +5,9 @@
 }
 
 <h2 class="mb-4 text-center">Top Anime</h2>
+<a class="btn btn-danger" asp-controller="Anime" asp-action="PdfTopAnime">
+    Descargar Top Anime en PDF
+</a>
 
 <div class="row">
     @foreach (var anime in Model)

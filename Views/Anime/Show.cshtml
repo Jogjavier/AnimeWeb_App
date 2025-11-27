@@ -6,6 +6,9 @@
 
 <div class="container py-4">
     <h1 class="mb-4 text-center fw-bold">@Model.Anime.Title</h1>
+    <a asp-controller="Anime" asp-action="PdfAnime" asp-route-id="@Model.Anime.Mal_Id" class="btn btn-dark">
+        Descargar PDF
+    </a>
 
     <!-- Anime Info Card -->
     <div class="card mb-5 shadow-sm border-0">

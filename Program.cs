@@ -1,9 +1,12 @@
+using AnimeWeb_App.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<JikanService>();
-
+builder.Services.AddScoped<IPdfService, PdfService>();
+QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
