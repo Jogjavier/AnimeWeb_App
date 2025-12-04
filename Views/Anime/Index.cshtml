@@ -1,12 +1,124 @@
 ﻿@model List<AnimeWeb_App.Models.Anime>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 @{
     ViewData["Title"] = "Top Anime";
+    var user = await UserManager.GetUserAsync(User);
+    var roles = user != null ? await UserManager.GetRolesAsync(user) : new List<string>();
 }
 
-<h2 class="mb-4 text-center">Top Anime</h2>
-<a class="btn btn-danger" asp-controller="Anime" asp-action="PdfTopAnime">
-    Descargar Top Anime en PDF
+<!-- Barra superior con menú de usuario -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Top Anime</h2>
+    
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="userMenuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i> @User.Identity.Name
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userMenuDropdown" style="min-width: 320px;">
+                <!-- Información del Usuario -->
+                <li class="px-3 py-2 border-bottom">
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 24px;">
+                            @User.Identity.Name.Substring(0, 1).ToUpper()
+                        </div>
+                        <div class="ms-3">
+                            <strong class="d-block">@User.Identity.Name</strong>
+                            <small class="text-muted">@user?.Email</small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <span class="badge bg-info">
+                            <i class="bi bi-shield-check"></i> @(roles.Any() ? string.Join(", ", roles) : "Usuario")
+                        </span>
+                    </div>
+                </li>
+
+                <!-- Opciones del Perfil - Desplegable -->
+                <li>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="accountSubmenu" data-bs-toggle="collapse" data-bs-target="#accountMenu" aria-expanded="false">
+                        <i class="bi bi-person"></i> Mi Cuenta
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="accountMenu">
+                        <li>
+                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index">
+                                <i class="bi bi-pencil-square"></i> Editar Perfil
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Email">
+                                <i class="bi bi-envelope"></i> Cambiar Correo
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/ChangePassword">
+                                <i class="bi bi-key"></i> Cambiar Contraseña
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <!-- Seguridad - Desplegable -->
+                <li>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="securitySubmenu" data-bs-toggle="collapse" data-bs-target="#securityMenu" aria-expanded="false">
+                        <i class="bi bi-shield-lock"></i> Seguridad
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="securityMenu">
+                        <li>
+                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/TwoFactorAuthentication">
+                                <i class="bi bi-shield-check"></i> Autenticación de Dos Factores
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/PersonalData">
+                                <i class="bi bi-file-person"></i> Datos Personales
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <!-- Cerrar Sesión -->
+                <li>
+                    <form class="px-3 py-2" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Anime")" method="post">
+                        <button type="submit" class="btn btn-danger w-100">
+                            <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Botón de Logout adicional -->
+        <form class="d-inline ms-2" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Anime")" method="post">
+            <button type="submit" class="btn btn-outline-danger">
+                <i class="bi bi-box-arrow-right"></i> Salir
+            </button>
+        </form>
+          
+    }
+    else
+    {
+        <div>
+            <a class="btn btn-outline-primary me-2" asp-area="Identity" asp-page="/Account/Login">
+                <i class="bi bi-box-arrow-in-right"></i> Iniciar Sesión
+            </a>
+            <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Register">
+                <i class="bi bi-person-plus"></i> Registrarse
+            </a>
+        </div>
+    }
+</div>
+
+<a class="btn btn-danger mb-3" asp-controller="Anime" asp-action="PdfTopAnime">
+    <i class="bi bi-file-pdf"></i> Descargar Top Anime en PDF
 </a>
 
 <div class="row">
@@ -34,3 +146,15 @@
         </div>
     }
 </div>
+
+@section Scripts {
+    <script>
+        // Asegura que Bootstrap dropdown funcione
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+            var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+                return new bootstrap.Dropdown(dropdownToggleEl)
+            });
+        });
+    </script>
+}

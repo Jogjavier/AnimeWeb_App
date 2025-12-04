@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnimeWeb_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e41b7af19da4487321ec78b96bdc6cf7739da484")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72a30bc137091a29e5ca39f8e607ea3f0e64e163")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimeWeb_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimeWeb_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

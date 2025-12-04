@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeWeb_App.774ezf1ttf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"774ezf1ttf"},{"Name":"integrity","Value":"sha256-w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E="},{"Name":"label","Value":"_content/AnimeWeb_App/AnimeWeb_App.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Nov 2025 05:24:09 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 01 Dec 2025 04:05:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/AnimeWeb_App.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeWeb_App.774ezf1ttf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Nov 2025 05:24:09 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 01 Dec 2025 04:05:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
@@ -35,6 +35,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Nov 2025 21:36:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/js/qr.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\qr.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uoGGUsNJOaI\u002BXz6FK/2VA6EIJrVzmWhzTcFaB/CiEo0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uoGGUsNJOaI\u002BXz6FK/2VA6EIJrVzmWhzTcFaB/CiEo0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Dec 2025 12:50:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/js/qr.uz3msurxtc.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\qr.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uz3msurxtc"},{"Name":"integrity","Value":"sha256-uoGGUsNJOaI\u002BXz6FK/2VA6EIJrVzmWhzTcFaB/CiEo0="},{"Name":"label","Value":"_content/AnimeWeb_App/js/qr.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uoGGUsNJOaI\u002BXz6FK/2VA6EIJrVzmWhzTcFaB/CiEo0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Dec 2025 12:50:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
@@ -587,6 +599,126 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"81b7ukuj9c"},{"Name":"integrity","Value":"sha256-ZH6pA6BSx6fuHZvdaKph1DwUJ\u002BVSYilIiEQu8ilnvqk="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/bootstrap/LICENSE"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1153"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022ZH6pA6BSx6fuHZvdaKph1DwUJ\u002BVSYilIiEQu8ilnvqk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Nov 2025 21:36:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/.12wk1fcrfm.gitignore">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\.gitignore'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"12wk1fcrfm"},{"Name":"integrity","Value":"sha256-SZwk/\u002BpkvxlQxbZJf9U8yk1ENZnEwul1SWy9GaWcITI="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/.gitignore"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022SZwk/\u002BpkvxlQxbZJf9U8yk1ENZnEwul1SWy9GaWcITI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/.gitignore">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\.gitignore'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SZwk/\u002BpkvxlQxbZJf9U8yk1ENZnEwul1SWy9GaWcITI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"26"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022SZwk/\u002BpkvxlQxbZJf9U8yk1ENZnEwul1SWy9GaWcITI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/bower.24f822nkjh.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\bower.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"24f822nkjh"},{"Name":"integrity","Value":"sha256-gvi8VjxA4L1qbw7Uvy4YbtjdlKY81rt1yS9OD\u002Bv/YiY="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/bower.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"430"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022gvi8VjxA4L1qbw7Uvy4YbtjdlKY81rt1yS9OD\u002Bv/YiY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/bower.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\bower.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gvi8VjxA4L1qbw7Uvy4YbtjdlKY81rt1yS9OD\u002Bv/YiY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"430"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022gvi8VjxA4L1qbw7Uvy4YbtjdlKY81rt1yS9OD\u002Bv/YiY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index-svg.4vov96q1a3.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\index-svg.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4vov96q1a3"},{"Name":"integrity","Value":"sha256-YA/HjRG3BFb/OKV\u002BSqhmDrEu2QXciCnmuQYd0aK7GGE="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index-svg.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1421"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022YA/HjRG3BFb/OKV\u002BSqhmDrEu2QXciCnmuQYd0aK7GGE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index-svg.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\index-svg.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YA/HjRG3BFb/OKV\u002BSqhmDrEu2QXciCnmuQYd0aK7GGE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1421"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022YA/HjRG3BFb/OKV\u002BSqhmDrEu2QXciCnmuQYd0aK7GGE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-goo0U5/9FPKEtPjnU167RdchOFeTk9W0CjYRbvuxfeo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1204"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022goo0U5/9FPKEtPjnU167RdchOFeTk9W0CjYRbvuxfeo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\index.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uY0TCwRlWjOXoiuraefqGtrFmDsInzE3tu0QWJOuyps="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1106"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022uY0TCwRlWjOXoiuraefqGtrFmDsInzE3tu0QWJOuyps=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index.vmhozwogkt.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\index.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vmhozwogkt"},{"Name":"integrity","Value":"sha256-uY0TCwRlWjOXoiuraefqGtrFmDsInzE3tu0QWJOuyps="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1106"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022uY0TCwRlWjOXoiuraefqGtrFmDsInzE3tu0QWJOuyps=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index.ynm3goz9g8.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ynm3goz9g8"},{"Name":"integrity","Value":"sha256-goo0U5/9FPKEtPjnU167RdchOFeTk9W0CjYRbvuxfeo="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1204"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022goo0U5/9FPKEtPjnU167RdchOFeTk9W0CjYRbvuxfeo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/jquery.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\jquery.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HwoRg9ntQPoeDPiimms\u002Byowoim9cNuFoE1UMT4uThjY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"93637"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022HwoRg9ntQPoeDPiimms\u002Byowoim9cNuFoE1UMT4uThjY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/jquery.min.r9032d1hst.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\jquery.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r9032d1hst"},{"Name":"integrity","Value":"sha256-HwoRg9ntQPoeDPiimms\u002Byowoim9cNuFoE1UMT4uThjY="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/jquery.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"93637"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022HwoRg9ntQPoeDPiimms\u002Byowoim9cNuFoE1UMT4uThjY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/LICENSE">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\LICENSE'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qqHzSQKKWUMusAIiuN3\u002BTSzOvc4Ez4NI3LjUG3BoEHs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1098"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022qqHzSQKKWUMusAIiuN3\u002BTSzOvc4Ez4NI3LjUG3BoEHs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/LICENSE.2yyjmxv6ia">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\LICENSE'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2yyjmxv6ia"},{"Name":"integrity","Value":"sha256-qqHzSQKKWUMusAIiuN3\u002BTSzOvc4Ez4NI3LjUG3BoEHs="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/LICENSE"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1098"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022qqHzSQKKWUMusAIiuN3\u002BTSzOvc4Ez4NI3LjUG3BoEHs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/qrcode.28yq9sd61h.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\qrcode.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"28yq9sd61h"},{"Name":"integrity","Value":"sha256-Puct6facZo\u002BVZzY6k1jflVlguukADZ69ZkFGcPiOhzU="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/qrcode.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33168"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Puct6facZo\u002BVZzY6k1jflVlguukADZ69ZkFGcPiOhzU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/qrcode.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\qrcode.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Puct6facZo\u002BVZzY6k1jflVlguukADZ69ZkFGcPiOhzU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"33168"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Puct6facZo\u002BVZzY6k1jflVlguukADZ69ZkFGcPiOhzU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.h5gslb8p3n.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\qrcode.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h5gslb8p3n"},{"Name":"integrity","Value":"sha256-xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19927"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\qrcode.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19927"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/README.ey55u38u6e.md">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\README.md'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ey55u38u6e"},{"Name":"integrity","Value":"sha256-mohpbhbo7UC4PDrLHvASzG\u002B54IzLByVo3yC1xWpiN/8="},{"Name":"label","Value":"_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/README.md"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1096"},{"Name":"Content-Type","Value":"text/markdown"},{"Name":"ETag","Value":"\u0022mohpbhbo7UC4PDrLHvASzG\u002B54IzLByVo3yC1xWpiN/8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/davidshimjs-qrcodejs-04f46c6/README.md">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\davidshimjs-qrcodejs-04f46c6\README.md'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mohpbhbo7UC4PDrLHvASzG\u002B54IzLByVo3yC1xWpiN/8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1096"},{"Name":"Content-Type","Value":"text/markdown"},{"Name":"ETag","Value":"\u0022mohpbhbo7UC4PDrLHvASzG\u002B54IzLByVo3yC1xWpiN/8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Nov 2015 10:43:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'))</AssetFile>

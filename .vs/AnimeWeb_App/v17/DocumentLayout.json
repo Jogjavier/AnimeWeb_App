@@ -3,36 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\services\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:services\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\areas\\identity\\pages\\account\\manage\\enableauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\enableauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\wwwroot\\js\\qr.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:wwwroot\\js\\qr.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\views\\anime\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:views\\anime\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\views\\anime\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:views\\anime\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\models\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:models\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\services\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:services\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\controllers\\animecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:controllers\\animecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\services\\jikanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:services\\jikanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\models\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:models\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\models\\animeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:models\\animeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\views\\anime\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:views\\anime\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\views\\anime\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:views\\anime\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\models\\aplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:models\\aplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\models\\aplicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:models\\aplicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\obj\\Debug\\net8.0\\AnimeWeb_App.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\AnimeWeb_App.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|c:\\users\\jog02\\source\\repos\\animeweb_app\\views\\anime\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46CF1675-02FA-4DEA-B73D-9D6B0A1A134B}|AnimeWeb_App.csproj|solutionrelative:views\\anime\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,63 +70,180 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "qr.js",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\js\\qr.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\qr.js",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\js\\qr.js",
+              "RelativeToolTip": "wwwroot\\js\\qr.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-03T12:50:29.894Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EnableAuthenticator.cshtml",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwDoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T12:48:20.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Anime.cs",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\Anime.cs",
+              "RelativeDocumentMoniker": "Models\\Anime.cs",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\Anime.cs",
+              "RelativeToolTip": "Models\\Anime.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:49:28.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IPdfService.cs",
               "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Services\\IPdfService.cs",
               "RelativeDocumentMoniker": "Services\\IPdfService.cs",
               "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Services\\IPdfService.cs",
               "RelativeToolTip": "Services\\IPdfService.cs",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAmwAoBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAMwHUAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:57:45.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T18:38:29.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JikanService.cs",
-              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Services\\JikanService.cs",
-              "RelativeDocumentMoniker": "Services\\JikanService.cs",
-              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Services\\JikanService.cs",
-              "RelativeToolTip": "Services\\JikanService.cs",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-28T02:07:21.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AplicationRole.cs",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\AplicationRole.cs",
+              "RelativeDocumentMoniker": "Models\\AplicationRole.cs",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\AplicationRole.cs",
+              "RelativeToolTip": "Models\\AplicationRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T02:04:01.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\AplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\AplicationUser.cs",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\AplicationUser.cs",
+              "RelativeToolTip": "Models\\AplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T01:26:53.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T02:01:51.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T22:32:18.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T22:32:18.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "AnimeController.cs",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Controllers\\AnimeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimeController.cs",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Controllers\\AnimeController.cs",
+              "RelativeToolTip": "Controllers\\AnimeController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T05:14:24.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T02:11:02.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Views\\Anime\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anime\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Views\\Anime\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Anime\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T17:31:58.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Views\\Anime\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Anime\\Index.cshtml",
               "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Views\\Anime\\Index.cshtml",
               "RelativeToolTip": "Views\\Anime\\Index.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAswGAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T19:31:10.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T19:31:10.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "AplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Data\\AplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Data\\AplicationDbContext.cs",
+              "RelativeToolTip": "Data\\AplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T19:43:52.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnimeWeb_App.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\obj\\Debug\\net8.0\\AnimeWeb_App.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\AnimeWeb_App.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\obj\\Debug\\net8.0\\AnimeWeb_App.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\AnimeWeb_App.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T02:20:16.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Show.cshtml",
               "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Views\\Anime\\Show.cshtml",
               "RelativeDocumentMoniker": "Views\\Anime\\Show.cshtml",
@@ -106,47 +251,7 @@
               "RelativeToolTip": "Views\\Anime\\Show.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T05:18:06.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AnimeController.cs",
-              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Controllers\\AnimeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AnimeController.cs",
-              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Controllers\\AnimeController.cs",
-              "RelativeToolTip": "Controllers\\AnimeController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwDkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T05:14:24.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AnimeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\AnimeViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\AnimeViewModel.cs",
-              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\AnimeViewModel.cs",
-              "RelativeToolTip": "Models\\AnimeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:44:54.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Anime.cs",
-              "DocumentMoniker": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\Anime.cs",
-              "RelativeDocumentMoniker": "Models\\Anime.cs",
-              "ToolTip": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\Models\\Anime.cs",
-              "RelativeToolTip": "Models\\Anime.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADgvxwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T05:07:10.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T05:18:06.392Z"
             }
           ]
         }

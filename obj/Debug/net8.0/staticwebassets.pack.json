@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\js\\qr.js",
+      "PackagePath": "staticwebassets\\js\\qr.js"
+    },
+    {
       "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -195,6 +199,46 @@
     {
       "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\.gitignore",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\README.md",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\bower.json",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index-svg.html",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\index-svg.html"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.html",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\index.svg",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\index.svg"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.js",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.js"
+    },
+    {
+      "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\lib\\davidshimjs-qrcodejs-04f46c6\\qrcode.min.js"
     },
     {
       "Id": "C:\\Users\\jog02\\source\\repos\\AnimeWeb_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

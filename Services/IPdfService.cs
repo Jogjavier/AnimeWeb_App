@@ -2,7 +2,6 @@
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using AnimeWeb_App.Models;
-using System.Net;
 
 namespace AnimeWeb_App.Services
 {
@@ -21,84 +20,48 @@ namespace AnimeWeb_App.Services
                 container.Page(page =>
                 {
                     page.Margin(40);
+                    page.Size(PageSizes.A4);
 
                     page.Header().Text("Listado de Animes")
                         .FontSize(22).Bold().AlignCenter();
 
-                    page.Content().Table(table =>
+                    page.Content().PaddingVertical(10).Column(col =>
                     {
-                        table.ColumnsDefinition(c =>
+                        col.Item().Table(table =>
                         {
-                            c.ConstantColumn(40);     // #
-                            c.RelativeColumn();       // Título
-                            c.RelativeColumn();       // Tipo
-                            c.ConstantColumn(80);     // Episodios
-                            c.RelativeColumn();       // Estado
-                            c.ConstantColumn(60);     // Año
+                            table.ColumnsDefinition(c =>
+                            {
+                                c.ConstantColumn(40);
+                                c.RelativeColumn(2);
+                                c.RelativeColumn(1);
+                                c.ConstantColumn(80);
+                                c.RelativeColumn(1);
+                                c.ConstantColumn(60);
+                            });
+
+                            // Cabecera
+                            table.Header(header =>
+                            {
+                                header.Cell().Background("#333").Padding(5).AlignCenter().Text("#").FontColor("#fff").Bold();
+                                header.Cell().Background("#333").Padding(5).AlignCenter().Text("Título").FontColor("#fff").Bold();
+                                header.Cell().Background("#333").Padding(5).AlignCenter().Text("Tipo").FontColor("#fff").Bold();
+                                header.Cell().Background("#333").Padding(5).AlignCenter().Text("Episodios").FontColor("#fff").Bold();
+                                header.Cell().Background("#333").Padding(5).AlignCenter().Text("Estado").FontColor("#fff").Bold();
+                                header.Cell().Background("#333").Padding(5).AlignCenter().Text("Año").FontColor("#fff").Bold();
+                            });
+
+                            // Filas
+                            int i = 1;
+                            foreach (var anime in animes)
+                            {
+                                table.Cell().Element(CellStyle).Text(i++.ToString());
+                                table.Cell().Element(CellStyle).Text(anime.Title ?? "N/A");
+                                table.Cell().Element(CellStyle).Text(anime.Type ?? "N/A");
+                                table.Cell().Element(CellStyle).Text(anime.Episodes?.ToString() ?? "N/A");
+                                table.Cell().Element(CellStyle).Text(anime.Status ?? "N/A");
+                                table.Cell().Element(CellStyle).Text(anime.Year?.ToString() ?? "N/A");
+                            }
                         });
-
-                        // Cabecera: crear celdas inline (evita problemas de tipos)
-                        table.Header(header =>
-                        {
-                            header.Cell()
-                                  .Background("#333")
-                                  .Padding(5)
-                                  .AlignCenter()
-                                  .Text("#")
-                                  .FontColor("#fff")
-                                  .Bold();
-
-                            header.Cell()
-                                  .Background("#333")
-                                  .Padding(5)
-                                  .AlignCenter()
-                                  .Text("Título")
-                                  .FontColor("#fff")
-                                  .Bold();
-
-                            header.Cell()
-                                  .Background("#333")
-                                  .Padding(5)
-                                  .AlignCenter()
-                                  .Text("Tipo")
-                                  .FontColor("#fff")
-                                  .Bold();
-
-                            header.Cell()
-                                  .Background("#333")
-                                  .Padding(5)
-                                  .AlignCenter()
-                                  .Text("Episodios")
-                                  .FontColor("#fff")
-                                  .Bold();
-
-                            header.Cell()
-                                  .Background("#333")
-                                  .Padding(5)
-                                  .AlignCenter()
-                                  .Text("Estado")
-                                  .FontColor("#fff")
-                                  .Bold();
-
-                            header.Cell()
-                                  .Background("#333")
-                                  .Padding(5)
-                                  .AlignCenter()
-                                  .Text("Año")
-                                  .FontColor("#fff")
-                                  .Bold();
-                        });
-
-                        int i = 1;
-                        foreach (var anime in animes)
-                        {
-                            table.Cell().Element(CellStyle).Text(i++.ToString());
-                            table.Cell().Element(CellStyle).Text(anime.Title ?? "N/A");
-                            table.Cell().Element(CellStyle).Text(anime.Type ?? "N/A");
-                            table.Cell().Element(CellStyle).Text(anime.Episodes?.ToString() ?? "N/A");
-                            table.Cell().Element(CellStyle).Text(anime.Status ?? "N/A");
-                            table.Cell().Element(CellStyle).Text(anime.Year?.ToString() ?? "N/A");
-                        }
                     });
 
                     page.Footer().AlignCenter().Text($"Generado el {DateTime.Now:dd/MM/yyyy HH:mm}")
@@ -116,34 +79,23 @@ namespace AnimeWeb_App.Services
                 container.Page(page =>
                 {
                     page.Margin(40);
+                    page.Size(PageSizes.A4);
 
-                    // Título
-                    page.Header().Text(model.Anime.Title)
+                    page.Header().Text(model.Anime.Title ?? "Anime")
                         .FontSize(24).Bold().AlignCenter();
 
-                    page.Content().Column(col =>
+                    page.Content().PaddingVertical(10).Column(col =>
                     {
-                        // Imagen principal (si existe)
-                        if (!string.IsNullOrEmpty(model.Anime.Images?.Jpg?.Large_Image_Url))
-                        {
-                            try
-                            {
-                                byte[] img = new WebClient().DownloadData(model.Anime.Images.Jpg.Large_Image_Url);
-                                col.Item().Image(img).FitWidth();
-                            }
-                            catch { /* ignorar fallo de descarga */ }
-                        }
-
                         // Información general
-                        col.Item().PaddingVertical(10)
+                        col.Item().PaddingBottom(10)
                             .Text("Información General").FontSize(18).Bold();
 
                         col.Item().Table(table =>
                         {
                             table.ColumnsDefinition(c =>
                             {
-                                c.ConstantColumn(140); // Label
-                                c.RelativeColumn();    // Valor
+                                c.ConstantColumn(140);
+                                c.RelativeColumn();
                             });
 
                             InfoRow(table, "Tipo", model.Anime.Type);
@@ -154,93 +106,74 @@ namespace AnimeWeb_App.Services
                             InfoRow(table, "Año", model.Anime.Year?.ToString());
                         });
 
+                        
+
                         // Compañías
-                        col.Item().PaddingVertical(10)
+                        col.Item().PaddingTop(15)
                             .Text("Compañías").FontSize(18).Bold();
 
-                        col.Item().Text($"Productores: {JoinList(model.Anime.Producers)}");
-                        col.Item().Text($"Licenciatarios: {JoinList(model.Anime.Licensors)}");
-                        col.Item().Text($"Estudios: {JoinList(model.Anime.Studios)}");
+                        col.Item().PaddingTop(5).Column(c =>
+                        {
+                            c.Item().Text($"• Productores: {JoinList(model.Anime.Producers)}");
+                            c.Item().Text($"• Licenciatarios: {JoinList(model.Anime.Licensors)}");
+                            c.Item().Text($"• Estudios: {JoinList(model.Anime.Studios)}");
+                        });
 
-                        // Personajes (tabla con header inline)
+                        // Personajes
                         if (model.Characters?.Any() == true)
                         {
                             col.Item().PaddingTop(15)
                                 .Text("Personajes Principales").FontSize(18).Bold();
 
-                            col.Item().Table(table =>
+                            col.Item().PaddingTop(5).Table(table =>
                             {
                                 table.ColumnsDefinition(c =>
                                 {
-                                    c.RelativeColumn();
-                                    c.ConstantColumn(120);
+                                    c.RelativeColumn(2);
+                                    c.RelativeColumn(1);
                                 });
 
                                 table.Header(header =>
                                 {
-                                    header.Cell()
-                                          .Background("#333")
-                                          .Padding(5)
-                                          .AlignCenter()
-                                          .Text("Nombre")
-                                          .FontColor("#fff")
-                                          .Bold();
-
-                                    header.Cell()
-                                          .Background("#333")
-                                          .Padding(5)
-                                          .AlignCenter()
-                                          .Text("Rol")
-                                          .FontColor("#fff")
-                                          .Bold();
+                                    header.Cell().Background("#333").Padding(5).AlignCenter().Text("Nombre").FontColor("#fff").Bold();
+                                    header.Cell().Background("#333").Padding(5).AlignCenter().Text("Rol").FontColor("#fff").Bold();
                                 });
 
                                 foreach (var character in model.Characters.Take(10))
                                 {
-                                    table.Cell().Element(CellStyle).Text(character.Character.Name ?? "N/A");
+                                    table.Cell().Element(CellStyle).Text(character.Character?.Name ?? "N/A");
                                     table.Cell().Element(CellStyle).Text(character.Role ?? "N/A");
                                 }
                             });
                         }
 
-                        // Staff (tabla con header inline)
+                        // Staff
                         if (model.Staff?.Any() == true)
                         {
                             col.Item().PaddingTop(15)
                                 .Text("Staff Principal").FontSize(18).Bold();
 
-                            col.Item().Table(table =>
+                            col.Item().PaddingTop(5).Table(table =>
                             {
                                 table.ColumnsDefinition(c =>
                                 {
-                                    c.RelativeColumn();
-                                    c.RelativeColumn();
+                                    c.RelativeColumn(2);
+                                    c.RelativeColumn(2);
                                 });
 
                                 table.Header(header =>
                                 {
-                                    header.Cell()
-                                          .Background("#333")
-                                          .Padding(5)
-                                          .AlignCenter()
-                                          .Text("Nombre")
-                                          .FontColor("#fff")
-                                          .Bold();
-
-                                    header.Cell()
-                                          .Background("#333")
-                                          .Padding(5)
-                                          .AlignCenter()
-                                          .Text("Posiciones")
-                                          .FontColor("#fff")
-                                          .Bold();
+                                    header.Cell().Background("#333").Padding(5).AlignCenter().Text("Nombre").FontColor("#fff").Bold();
+                                    header.Cell().Background("#333").Padding(5).AlignCenter().Text("Posiciones").FontColor("#fff").Bold();
                                 });
 
                                 foreach (var s in model.Staff.Take(10))
                                 {
-                                    table.Cell().Element(CellStyle).Text(s.Person.Name ?? "N/A");
+                                    table.Cell().Element(CellStyle).Text(s.Person?.Name ?? "N/A");
                                     table.Cell().Element(CellStyle).Text(
-                                        s.Positions != null ? string.Join(", ", s.Positions) : "N/A"
+                                        s.Positions != null && s.Positions.Any()
+                                            ? string.Join(", ", s.Positions)
+                                            : "N/A"
                                     );
                                 }
                             });
@@ -255,14 +188,18 @@ namespace AnimeWeb_App.Services
             return document.GeneratePdf();
         }
 
-        // ---------------------------
         // Helpers
-        // ---------------------------
-
         private static string JoinList(IEnumerable<dynamic>? items)
         {
             if (items == null || !items.Any()) return "N/A";
-            return string.Join(", ", items.Select(x => x.Name));
+            try
+            {
+                return string.Join(", ", items.Select(x => x.Name?.ToString() ?? ""));
+            }
+            catch
+            {
+                return "N/A";
+            }
         }
 
         private static IContainer CellStyle(IContainer container)
