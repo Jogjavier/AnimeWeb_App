@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AnimeWeb_App.styles.css" asp-append-version="true" />
+
+    <style>
+        /* Asegura que el submenú se posicione correctamente */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            /* Coloca el submenú a la derecha del elemento padre */
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -1px; /* Ajuste fino */
+            }
+    </style>
 </head>
 <body>
     <header>
@@ -43,6 +57,48 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Selecciona todos los elementos de submenú desplegable
+            document.querySelectorAll('.dropdown-submenu a.dropdown-toggle').forEach(function (element) {
+
+                // Asigna un evento de clic a cada enlace de submenú
+                element.addEventListener('click', function (e) {
+
+                    // Evita la acción predeterminada del enlace (navegar a '#')
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    let nextEl = this.nextElementSibling;
+
+                    // Itera sobre todos los submenús hermanos para cerrarlos (colapsarlos)
+                    document.querySelectorAll('.dropdown-submenu').forEach(function(el){
+                        if (el !== nextEl.closest('.dropdown-submenu')) {
+                            let menu = el.querySelector('.dropdown-menu');
+                            if (menu) {
+                                menu.classList.remove('show');
+                            }
+                        }
+                    });
+
+                    // Alternar la clase 'show' para mostrar/ocultar el submenú actual
+                    if (nextEl && nextEl.classList.contains('dropdown-menu')) {
+                        nextEl.classList.toggle('show');
+                    }
+                });
+            });
+
+            // Opcional: Cerrar los submenús cuando se haga clic en cualquier otra parte del documento
+            document.body.addEventListener('click', function (e) {
+                 // Verifica si el clic fue fuera del dropdown principal
+                 if (!e.target.closest('.dropdown')) {
+                     document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function(el){
+                        el.classList.remove('show');
+                     });
+                 }
+            });
+        });
+    </script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

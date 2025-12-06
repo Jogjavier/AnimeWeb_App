@@ -9,12 +9,14 @@ namespace AnimeWeb_App.Controllers
     {
         private readonly JikanService _jikan;
         private readonly IPdfService _pdfService;
+        private readonly ILogger<AnimeController> _logger;
 
 
-        public AnimeController(IPdfService pdfService, JikanService jikan)
+        public AnimeController(IPdfService pdfService, JikanService jikan, ILogger<AnimeController> logger)
         {
             _pdfService = pdfService;
             _jikan = jikan;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Index()
@@ -51,6 +53,8 @@ namespace AnimeWeb_App.Controllers
         }
         public async Task<IActionResult> PdfAnime(int id)
         {
+
+            _logger.LogInformation("Iniciando generación de PDF de lista de animes");
             var anime = await _jikan.GetAnimeAsync(id);
             var characters = await _jikan.GetAnimeCharactersAsync(id);
             var staff = await _jikan.GetAnimeStaffAsync(id);
