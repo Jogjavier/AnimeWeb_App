@@ -192,6 +192,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jog02/source/repos/AnimeWeb_App/Views/Anime/PdfAnime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVcUGRmQW5pbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jog02/source/repos/AnimeWeb_App/Views/Anime/PdfTop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVcUGRmVG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jog02/source/repos/AnimeWeb_App/Views/Anime/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWVcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

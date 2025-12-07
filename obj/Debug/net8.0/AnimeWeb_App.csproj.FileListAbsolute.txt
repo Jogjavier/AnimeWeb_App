@@ -295,4 +295,4 @@ C:\Users\jog02\source\repos\AnimeWeb_App\obj\Debug\net8.0\refint\AnimeWeb_App.dl
 C:\Users\jog02\source\repos\AnimeWeb_App\obj\Debug\net8.0\AnimeWeb_App.pdb
 C:\Users\jog02\source\repos\AnimeWeb_App\obj\Debug\net8.0\AnimeWeb_App.genruntimeconfig.cache
 C:\Users\jog02\source\repos\AnimeWeb_App\obj\Debug\net8.0\ref\AnimeWeb_App.dll
-C:\Users\jog02\source\repos\AnimeWeb_App\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\jog02\source\repos\AnimeWeb_App\bin\Debug\net8.0\DinkToPdf.dll

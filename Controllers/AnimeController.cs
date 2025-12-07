@@ -1,5 +1,6 @@
 ﻿using AnimeWeb_App.Models;
 using AnimeWeb_App.Services;
+using Humanizer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,20 +9,29 @@ namespace AnimeWeb_App.Controllers
     public class AnimeController : Controller
     {
         private readonly JikanService _jikan;
-        private readonly IPdfService _pdfService;
-        private readonly ILogger<AnimeController> _logger;
+        private readonly IRazorViewToStringRenderer _renderer;
+        private readonly IHtmlPdfService _pdf;
 
 
-        public AnimeController(IPdfService pdfService, JikanService jikan, ILogger<AnimeController> logger)
+
+        public AnimeController(JikanService jikan, IHtmlPdfService pdf, IRazorViewToStringRenderer renderer)
         {
-            _pdfService = pdfService;
             _jikan = jikan;
-            _logger = logger;
+            _pdf = pdf;
+            _renderer = renderer;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
             var animes = await _jikan.GetTopAnimeAsync();
+            if (!string.IsNullOrEmpty(search))
+            {
+                animes = animes
+                    .Where(a =>
+                        a.Title.Contains(search, StringComparison.OrdinalIgnoreCase)
+                    )
+                    .ToList();
+            }
             return View(animes);
         }
 
@@ -44,32 +54,35 @@ namespace AnimeWeb_App.Controllers
             return View(vm);
         }
 
-        public async Task<IActionResult> PdfTopAnime()
+        public async Task<IActionResult> PdfTop()
         {
-            var animes = await _jikan.GetTopAnimeAsync();
-            var pdfBytes = _pdfService.GenerateAnimeListPdf(animes);
+            var top = await _jikan.GetTopAnimeAsync();
 
-            return File(pdfBytes, "application/pdf", "top_animes.pdf");
-        }
-        public async Task<IActionResult> PdfAnime(int id)
-        {
-
-            _logger.LogInformation("Iniciando generación de PDF de lista de animes");
-            var anime = await _jikan.GetAnimeAsync(id);
-            var characters = await _jikan.GetAnimeCharactersAsync(id);
-            var staff = await _jikan.GetAnimeStaffAsync(id);
-
-            var vm = _jikan.PaginateAnimeData(
-                anime,
-                characters,
-                staff,
-                pageCharacters: 1,
-                pageStaff: 1
+            string html = await _renderer.RenderViewToStringAsync(
+                "Views/Anime/PdfTop.cshtml",
+                top
             );
 
-            var pdfBytes = _pdfService.GenerateAnimeDetailPdf(vm);
 
-            return File(pdfBytes, "application/pdf", $"{anime.Title}.pdf");
+            byte[] pdfBytes = _pdf.GeneratePdf(html);
+
+            return File(pdfBytes, "application/pdf", "top-animes.pdf");
         }
+
+        public async Task<IActionResult> PdfAnime(int id)
+        {
+            var anime = await _jikan.GetAnimeAsync(id);
+
+            string html = await _renderer.RenderViewToStringAsync(
+                 "Views/Anime/PdfAnime.cshtml",
+                 anime
+             );
+
+
+            byte[] pdfBytes = _pdf.GeneratePdf(html);
+
+            return File(pdfBytes, "application/pdf", $"anime-{id}.pdf");
+        }
+
     }
 }
