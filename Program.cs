@@ -12,14 +12,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // DB - Configuración para Render
 string connectionString;
-var databaseUrl = Environment.GetEnvironmentVariable("postgresql://postgress:Wf1pHmmwrSXOFf98i75zQ58Aa8RAYFUV@dpg-d4t8ilmuk2gs73elafk0-a/animeweb_tzon");
+var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 
 if (!string.IsNullOrEmpty(databaseUrl))
 {
     try
     {
         // Convertir DATABASE_URL de Render (postgres://...)
-        var uri = new Uri(databaseUrl);
+        var uri = new Uri(databaseUrl.Replace("postgres://", "postgresql://"));
         
         // Extraer credenciales
         var userInfo = uri.UserInfo.Split(':');
