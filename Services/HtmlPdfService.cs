@@ -1,32 +1,34 @@
 ﻿using DinkToPdf;
 using DinkToPdf.Contracts;
 
-public interface IHtmlPdfService
+namespace AnimeWeb_App.Services  // ← FALTABA ESTO
 {
-    byte[] GeneratePdf(string html);
-}
-
-public class HtmlPdfService : IHtmlPdfService
-{
-    private readonly IConverter _converter;
-
-    public HtmlPdfService(IConverter converter)
+    public interface IHtmlPdfService
     {
-        _converter = converter;
+        byte[] GeneratePdf(string html);
     }
 
-    public byte[] GeneratePdf(string html)
+    public class HtmlPdfService : IHtmlPdfService
     {
-        var doc = new HtmlToPdfDocument()
+        private readonly IConverter _converter;
+
+        public HtmlPdfService(IConverter converter)
         {
-            GlobalSettings = new GlobalSettings
+            _converter = converter;
+        }
+
+        public byte[] GeneratePdf(string html)
+        {
+            var doc = new HtmlToPdfDocument()
             {
-                PaperSize = PaperKind.A4,
-                Orientation = Orientation.Portrait,
-                ColorMode = ColorMode.Color,
-                Margins = new MarginSettings { Top = 20, Bottom = 20 }
-            },
-            Objects =
+                GlobalSettings = new GlobalSettings
+                {
+                    PaperSize = PaperKind.A4,
+                    Orientation = Orientation.Portrait,
+                    ColorMode = ColorMode.Color,
+                    Margins = new MarginSettings { Top = 20, Bottom = 20 }
+                },
+                Objects =
             {
                 new ObjectSettings()
                 {
@@ -34,8 +36,9 @@ public class HtmlPdfService : IHtmlPdfService
                     WebSettings = { DefaultEncoding = "utf-8" },
                 }
             }
-        };
+            };
 
-        return _converter.Convert(doc);
+            return _converter.Convert(doc);
+        }
     }
 }

@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeWeb_App.774ezf1ttf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"774ezf1ttf"},{"Name":"integrity","Value":"sha256-w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E="},{"Name":"label","Value":"_content/AnimeWeb_App/AnimeWeb_App.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 01 Dec 2025 04:05:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Wed, 10 Dec 2025 03:32:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/AnimeWeb_App.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeWeb_App.774ezf1ttf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 01 Dec 2025 04:05:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w/u/VhUz2mwINfnNa\u002B\u002B6fKmOhYBlah4cksCeUW82V9E=\u0022"},{"Name":"Last-Modified","Value":"Wed, 10 Dec 2025 03:32:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AnimeWeb_App/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

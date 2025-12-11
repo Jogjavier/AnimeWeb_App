@@ -7,13 +7,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using DinkToPdf;
 using DinkToPdf.Contracts;
-using AnimeWeb_App.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Cargar librería nativa wkhtmltox
-var context = new CustomAssemblyLoadContext();
-context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "libwkhtmltox.dll"));
 
 // DB
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -97,6 +92,13 @@ app.MapControllerRoute(
 );
 
 app.MapRazorPages();
+
+// Aplicar migraciones automáticamente al iniciar la app
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    db.Database.Migrate();
+}
 
 // Seed Roles
 using (var scope = app.Services.CreateScope())

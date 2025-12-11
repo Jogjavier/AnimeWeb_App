@@ -27,9 +27,6 @@
     <!-- PostgreSQL -->
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
 
-    <!-- QuestPDF -->
-    <PackageReference Include="QuestPDF" Version="2025.7.4" />
-
   </ItemGroup>
 
 </Project>
