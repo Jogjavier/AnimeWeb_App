@@ -16,23 +16,40 @@ var databaseUrl = Environment.GetEnvironmentVariable("postgresql://postgress:Wf1
 
 if (!string.IsNullOrEmpty(databaseUrl))
 {
-    // Producción: Convertir DATABASE_URL de Render (postgres://...)
-    var uri = new Uri(databaseUrl);
-    var password = uri.UserInfo.Split(':')[1];
-    var username = uri.UserInfo.Split(':')[0];
-    
-    connectionString = $"Host={uri.Host};Port={uri.Port};Database={uri.AbsolutePath.Trim('/')};Username={username};Password={password};SSL Mode=Require;Trust Server Certificate=true";
+    try
+    {
+        // Convertir DATABASE_URL de Render (postgres://...)
+        var uri = new Uri(databaseUrl);
+        
+        // Extraer credenciales
+        var userInfo = uri.UserInfo.Split(':');
+        var username = userInfo[0];
+        var password = userInfo.Length > 1 ? userInfo[1] : "";
+        
+        // Extraer base de datos (remover el '/' inicial)
+        var database = uri.AbsolutePath.TrimStart('/');
+        
+        // Construir connection string
+        connectionString = $"Host={uri.Host};Port={uri.Port};Database={database};Username={username};Password={password};SSL Mode=Require;Trust Server Certificate=true";
+        
+        Console.WriteLine($"✓ Usando DATABASE_URL - Host: {uri.Host}, Port: {uri.Port}, DB: {database}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"✗ Error parseando DATABASE_URL: {ex.Message}");
+        throw new Exception($"Error al parsear DATABASE_URL. Verifica que esté configurada correctamente en Render. Error: {ex.Message}");
+    }
 }
 else
 {
     // Desarrollo local: usar appsettings.json
     connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    Console.WriteLine("✓ Usando ConnectionString local de appsettings.json");
 }
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString)
 );
-
 // Identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
