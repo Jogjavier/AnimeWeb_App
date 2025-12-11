@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // DB - Configuración para Render
 string connectionString;
-var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+var databaseUrl = Environment.GetEnvironmentVariable("postgresql://postgress:Wf1pHmmwrSXOFf98i75zQ58Aa8RAYFUV@dpg-d4t8ilmuk2gs73elafk0-a/animeweb_tzon");
 
 if (!string.IsNullOrEmpty(databaseUrl))
 {
