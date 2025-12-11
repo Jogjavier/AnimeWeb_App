@@ -25,15 +25,15 @@ if (!string.IsNullOrEmpty(databaseUrl))
         var userInfo = uri.UserInfo.Split(':');
         var username = userInfo[0];
         var password = userInfo.Length > 1 ? userInfo[1] : "";
-        
-        // Extraer base de datos (remover el '/' inicial)
         var database = uri.AbsolutePath.TrimStart('/');
         
-        // Construir connection string
-        connectionString = $"Host={uri.Host};Port={uri.Port};Database={database};Username={username};Password={password};SSL Mode=Require;Trust Server Certificate=true";
+        // 3. *** CORRECCIÓN CLAVE: Asignar el puerto por defecto si no está especificado ***
+        var port = uri.Port > 0 ? uri.Port : 5432; 
+
+        // 4. Construir connection string
+        connectionString = $"Host={uri.Host};Port={port};Database={database};Username={username};Password={password};SSL Mode=Require;Trust Server Certificate=true";
         
-        Console.WriteLine($"✓ Usando DATABASE_URL - Host: {uri.Host}, Port: {uri.Port}, DB: {database}");
-    }
+        Console.WriteLine($"✓ Usando DATABASE_URL - Host: {uri.Host}, Port: {port}, DB: {database}"); }
     catch (Exception ex)
     {
         Console.WriteLine($"✗ Error parseando DATABASE_URL: {ex.Message}");
