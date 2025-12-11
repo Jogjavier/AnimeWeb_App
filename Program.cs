@@ -10,9 +10,27 @@ using DinkToPdf.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// DB
+// DB - Configuración para Render
+string connectionString;
+var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+
+if (!string.IsNullOrEmpty(databaseUrl))
+{
+    // Producción: Convertir DATABASE_URL de Render (postgres://...)
+    var uri = new Uri(databaseUrl);
+    var password = uri.UserInfo.Split(':')[1];
+    var username = uri.UserInfo.Split(':')[0];
+    
+    connectionString = $"Host={uri.Host};Port={uri.Port};Database={uri.AbsolutePath.Trim('/')};Username={username};Password={password};SSL Mode=Require;Trust Server Certificate=true";
+}
+else
+{
+    // Desarrollo local: usar appsettings.json
+    connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+}
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+    options.UseNpgsql(connectionString)
 );
 
 // Identity

@@ -39,6 +39,6 @@ RUN wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/w
     && rm -rf /var/lib/apt/lists/*
 COPY --from=build /app/publish .
 
-EXPOSE 8080
-
+EXPOSE 10000
+ENV ASPNETCORE_URLS=http://0.0.0.0:10000
 ENTRYPOINT ["dotnet", "AnimeWeb_App.dll"]
